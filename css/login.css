@@ -1,0 +1,25 @@
+.button__default__bg-color {
+    background-color: #A3E635;
+    color: white;
+    border: 1px solid #A3E635;
+}
+
+.button__default__bg-color:hover {
+    background-color: #84CC16;
+    color: white;
+    border: 1px solid #84CC16;
+}
+
+.button__default__bg-color:active {
+    background-color: #3F6212 !important;
+    color: white !important;
+    border: 1px solid #3F6212 !important;
+}   
+
+.login__box__shadow {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.border__none {
+    border: none !important;
+}
