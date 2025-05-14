@@ -1,14 +1,21 @@
 :root {
     /* ===== Global Variables ===== */
-    /* ===== Colors ===== */
-    --color-primary: #009368;      /*  اخضر فاتح*/
-    --color-secondary: #eca30c;    /* اصفر */
-    --color-accent:#a4a9a8 ;       /* رمادي */
-    --color-white: #ffffff;        /* ابيض */
-    --color-dark: #213430;         /* اخضر غامق */
-
+    /* ===== Colors ===== */ 
+    --color-lime-500: #84cc16;  
+    --color-lime-300: #D9F99D;    
+    --color-lime-100: #ECFCCB;    
+    --color-slate-400:#94a3b8 ;     
+    --color-gray-900:#111827;
+    --color-gray-600:#4b5563;
+    --color-gray-500:#6b7280;
+    --color-gray-200:#e5e7eb;
+    --color-white: #ffffff;        
+    --color-dark: #213430;       
+    --font-primary-color-slate-900: #1f2937; 
+    
     /* ===== Typography ===== */
-    --font-body: 'Poppins';
+    --font-body: 'Inter';
+
     /* ===== Font Sizes ===== */
     --font-size-sm: 14px;
     --font-size-base: 16px;
@@ -26,9 +33,9 @@
     --section-xxxl: 120px;
 
     /* ===== Border Radius & Shadow ===== */
-    --radius-sm: 4px;
-    --radius-md: 8px;
-    --radius-lg: 12px;
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 15px;
 
     --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.1);
     --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
