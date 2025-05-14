@@ -3,13 +3,749 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Favorite</title>
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/favorite-history-explore.css">
+    <link rel="stylesheet" href="css/favorite.css">
 </head>
 <body>
-    
+            <div class="nav__bar__container"></div>
+        <!-- favorite-body -->
+        <div class="favorite__main__container container mt-5">
+            <!-- title with filter -->
+            <div class="favorite__title__div d-flex justify-content-between">
+                <div class="title__left__section">
+                    <h3>Favorite</h3>
+                    <p class="mb-0">Where do you want to help</p>
+                </div>
+                <div
+                    class="title__right__filter d-flex gap-2 justify-content-center align-items-center"
+                >
+                    <div class="div__filter__list">
+                        <div
+                            class="btn-group"
+                            role="group"
+                            aria-label="Basic example"
+                        >
+                            <button
+                                type="button"
+                                class="btn btn-secondary filter__btns px-4"
+                            >
+                                <i class="fa-solid fa-arrow-up pe-2"></i> Price
+                            </button>
+                            <button
+                                type="button"
+                                class="btn btn-secondary filter__btns px-4"
+                            >
+                                <i class="fa-solid fa-arrow-down pe-2"></i> Date
+                            </button>
+                        </div>
+                    </div>
+                    <button
+                        class="button__show__filters btn btn-secondary d-flex gap-2 justify-content-center align-items-center"
+                    >
+                        <i class="fa-solid fa-filter"></i>
+                        <p class="mb-0">Show Filters</p>
+                    </button>
+                </div>
+            </div>
+            <!-- cards container -->
+            <div class="all_pages__cards__container mt-5">
+                <div class="card__temp">
+                    <div class="card">
+                        <div class="top-right-icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                        <!-- /top-right-icons -->
+                        <img
+                            src="assets/images/pexels-rdne-6647119.jpg"
+                            class="card-img-top"
+                            alt="img1"
+                        />
+                        <div class="card__body">
+                            <img
+                                src="https://i.pravatar.cc/24"
+                                alt="logo"
+                                class="rounded-circle imgAvatar"
+                            />
+                            <span class="card__body__name">Olivia Ritye</span>
+                            <h5 class="card--title">
+                                Ms. Saint-Martin Doranyia Pascal
+                            </h5>
+                            <p class="card--text">
+                                Hi This is your Miss Teen Carnival 2022 Doranyia
+                                Pascal I will be representing Saint Martin...
+                            </p>
+                            <div
+                                class="progress"
+                                role="progressbar"
+                                aria-label="Success example"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                            >
+                                <div
+                                    class="progress-bar"
+                                    style="width: 70%"
+                                ></div>
+                            </div>
+                            <!-- /progress -->
+                            <div
+                                class="d-flex justify-content-between small mb-1"
+                            >
+                                <span class="card__bottom__text"
+                                    ><i class="fa-solid fa-gift pe-2"></i
+                                    >$4,265.42</span
+                                >
+                                <span class="card__bottom__text">73%</span>
+                            </div>
+                            <!-- /mony -->
+                        </div>
+                        <!-- /card--body -->
+                    </div>
+                    <!-- /card -->
+                </div>
+                <div class="card__temp">
+                    <div class="card">
+                        <div class="top-right-icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                        <!-- /top-right-icons -->
+                        <img
+                            src="assets/images/pexels-rdne-6647119.jpg"
+                            class="card-img-top"
+                            alt="img1"
+                        />
+                        <div class="card__body">
+                            <img
+                                src="https://i.pravatar.cc/24"
+                                alt="logo"
+                                class="rounded-circle imgAvatar"
+                            />
+                            <span class="card__body__name">Olivia Ritye</span>
+                            <h5 class="card--title">
+                                Ms. Saint-Martin Doranyia Pascal
+                            </h5>
+                            <p class="card--text">
+                                Hi This is your Miss Teen Carnival 2022 Doranyia
+                                Pascal I will be representing Saint Martin...
+                            </p>
+                            <div
+                                class="progress"
+                                role="progressbar"
+                                aria-label="Success example"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                            >
+                                <div
+                                    class="progress-bar"
+                                    style="width: 70%"
+                                ></div>
+                            </div>
+                            <!-- /progress -->
+                            <div
+                                class="d-flex justify-content-between small mb-1"
+                            >
+                                <span class="card__bottom__text"
+                                    ><i class="fa-solid fa-gift pe-2"></i
+                                    >$4,265.42</span
+                                >
+                                <span class="card__bottom__text">73%</span>
+                            </div>
+                            <!-- /mony -->
+                        </div>
+                        <!-- /card--body -->
+                    </div>
+                    <!-- /card -->
+                </div>
+                <div class="card__temp">
+                    <div class="card">
+                        <div class="top-right-icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                        <!-- /top-right-icons -->
+                        <img
+                            src="assets/images/pexels-rdne-6647119.jpg"
+                            class="card-img-top"
+                            alt="img1"
+                        />
+                        <div class="card__body">
+                            <img
+                                src="https://i.pravatar.cc/24"
+                                alt="logo"
+                                class="rounded-circle imgAvatar"
+                            />
+                            <span class="card__body__name">Olivia Ritye</span>
+                            <h5 class="card--title">
+                                Ms. Saint-Martin Doranyia Pascal
+                            </h5>
+                            <p class="card--text">
+                                Hi This is your Miss Teen Carnival 2022 Doranyia
+                                Pascal I will be representing Saint Martin...
+                            </p>
+                            <div
+                                class="progress"
+                                role="progressbar"
+                                aria-label="Success example"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                            >
+                                <div
+                                    class="progress-bar"
+                                    style="width: 70%"
+                                ></div>
+                            </div>
+                            <!-- /progress -->
+                            <div
+                                class="d-flex justify-content-between small mb-1"
+                            >
+                                <span class="card__bottom__text"
+                                    ><i class="fa-solid fa-gift pe-2"></i
+                                    >$4,265.42</span
+                                >
+                                <span class="card__bottom__text">73%</span>
+                            </div>
+                            <!-- /mony -->
+                        </div>
+                        <!-- /card--body -->
+                    </div>
+                    <!-- /card -->
+                </div>
+                <div class="card__temp">
+                    <div class="card">
+                        <div class="top-right-icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                        <!-- /top-right-icons -->
+                        <img
+                            src="assets/images/pexels-rdne-6647119.jpg"
+                            class="card-img-top"
+                            alt="img1"
+                        />
+                        <div class="card__body">
+                            <img
+                                src="https://i.pravatar.cc/24"
+                                alt="logo"
+                                class="rounded-circle imgAvatar"
+                            />
+                            <span class="card__body__name">Olivia Ritye</span>
+                            <h5 class="card--title">
+                                Ms. Saint-Martin Doranyia Pascal
+                            </h5>
+                            <p class="card--text">
+                                Hi This is your Miss Teen Carnival 2022 Doranyia
+                                Pascal I will be representing Saint Martin...
+                            </p>
+                            <div
+                                class="progress"
+                                role="progressbar"
+                                aria-label="Success example"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                            >
+                                <div
+                                    class="progress-bar"
+                                    style="width: 70%"
+                                ></div>
+                            </div>
+                            <!-- /progress -->
+                            <div
+                                class="d-flex justify-content-between small mb-1"
+                            >
+                                <span class="card__bottom__text"
+                                    ><i class="fa-solid fa-gift pe-2"></i
+                                    >$4,265.42</span
+                                >
+                                <span class="card__bottom__text">73%</span>
+                            </div>
+                            <!-- /mony -->
+                        </div>
+                        <!-- /card--body -->
+                    </div>
+                    <!-- /card -->
+                </div>
+                <div class="card__temp">
+                    <div class="card">
+                        <div class="top-right-icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                        <!-- /top-right-icons -->
+                        <img
+                            src="assets/images/pexels-rdne-6647119.jpg"
+                            class="card-img-top"
+                            alt="img1"
+                        />
+                        <div class="card__body">
+                            <img
+                                src="https://i.pravatar.cc/24"
+                                alt="logo"
+                                class="rounded-circle imgAvatar"
+                            />
+                            <span class="card__body__name">Olivia Ritye</span>
+                            <h5 class="card--title">
+                                Ms. Saint-Martin Doranyia Pascal
+                            </h5>
+                            <p class="card--text">
+                                Hi This is your Miss Teen Carnival 2022 Doranyia
+                                Pascal I will be representing Saint Martin...
+                            </p>
+                            <div
+                                class="progress"
+                                role="progressbar"
+                                aria-label="Success example"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                            >
+                                <div
+                                    class="progress-bar"
+                                    style="width: 70%"
+                                ></div>
+                            </div>
+                            <!-- /progress -->
+                            <div
+                                class="d-flex justify-content-between small mb-1"
+                            >
+                                <span class="card__bottom__text"
+                                    ><i class="fa-solid fa-gift pe-2"></i
+                                    >$4,265.42</span
+                                >
+                                <span class="card__bottom__text">73%</span>
+                            </div>
+                            <!-- /mony -->
+                        </div>
+                        <!-- /card--body -->
+                    </div>
+                    <!-- /card -->
+                </div>
+                <div class="card__temp">
+                    <div class="card">
+                        <div class="top-right-icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                        <!-- /top-right-icons -->
+                        <img
+                            src="assets/images/pexels-rdne-6647119.jpg"
+                            class="card-img-top"
+                            alt="img1"
+                        />
+                        <div class="card__body">
+                            <img
+                                src="https://i.pravatar.cc/24"
+                                alt="logo"
+                                class="rounded-circle imgAvatar"
+                            />
+                            <span class="card__body__name">Olivia Ritye</span>
+                            <h5 class="card--title">
+                                Ms. Saint-Martin Doranyia Pascal
+                            </h5>
+                            <p class="card--text">
+                                Hi This is your Miss Teen Carnival 2022 Doranyia
+                                Pascal I will be representing Saint Martin...
+                            </p>
+                            <div
+                                class="progress"
+                                role="progressbar"
+                                aria-label="Success example"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                            >
+                                <div
+                                    class="progress-bar"
+                                    style="width: 70%"
+                                ></div>
+                            </div>
+                            <!-- /progress -->
+                            <div
+                                class="d-flex justify-content-between small mb-1"
+                            >
+                                <span class="card__bottom__text"
+                                    ><i class="fa-solid fa-gift pe-2"></i
+                                    >$4,265.42</span
+                                >
+                                <span class="card__bottom__text">73%</span>
+                            </div>
+                            <!-- /mony -->
+                        </div>
+                        <!-- /card--body -->
+                    </div>
+                    <!-- /card -->
+                </div>
+                <div class="card__temp">
+                    <div class="card">
+                        <div class="top-right-icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                        <!-- /top-right-icons -->
+                        <img
+                            src="assets/images/pexels-rdne-6647119.jpg"
+                            class="card-img-top"
+                            alt="img1"
+                        />
+                        <div class="card__body">
+                            <img
+                                src="https://i.pravatar.cc/24"
+                                alt="logo"
+                                class="rounded-circle imgAvatar"
+                            />
+                            <span class="card__body__name">Olivia Ritye</span>
+                            <h5 class="card--title">
+                                Ms. Saint-Martin Doranyia Pascal
+                            </h5>
+                            <p class="card--text">
+                                Hi This is your Miss Teen Carnival 2022 Doranyia
+                                Pascal I will be representing Saint Martin...
+                            </p>
+                            <div
+                                class="progress"
+                                role="progressbar"
+                                aria-label="Success example"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                            >
+                                <div
+                                    class="progress-bar"
+                                    style="width: 70%"
+                                ></div>
+                            </div>
+                            <!-- /progress -->
+                            <div
+                                class="d-flex justify-content-between small mb-1"
+                            >
+                                <span class="card__bottom__text"
+                                    ><i class="fa-solid fa-gift pe-2"></i
+                                    >$4,265.42</span
+                                >
+                                <span class="card__bottom__text">73%</span>
+                            </div>
+                            <!-- /mony -->
+                        </div>
+                        <!-- /card--body -->
+                    </div>
+                    <!-- /card -->
+                </div>
+                <div class="card__temp">
+                    <div class="card">
+                        <div class="top-right-icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                        <!-- /top-right-icons -->
+                        <img
+                            src="assets/images/pexels-rdne-6647119.jpg"
+                            class="card-img-top"
+                            alt="img1"
+                        />
+                        <div class="card__body">
+                            <img
+                                src="https://i.pravatar.cc/24"
+                                alt="logo"
+                                class="rounded-circle imgAvatar"
+                            />
+                            <span class="card__body__name">Olivia Ritye</span>
+                            <h5 class="card--title">
+                                Ms. Saint-Martin Doranyia Pascal
+                            </h5>
+                            <p class="card--text">
+                                Hi This is your Miss Teen Carnival 2022 Doranyia
+                                Pascal I will be representing Saint Martin...
+                            </p>
+                            <div
+                                class="progress"
+                                role="progressbar"
+                                aria-label="Success example"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                            >
+                                <div
+                                    class="progress-bar"
+                                    style="width: 70%"
+                                ></div>
+                            </div>
+                            <!-- /progress -->
+                            <div
+                                class="d-flex justify-content-between small mb-1"
+                            >
+                                <span class="card__bottom__text"
+                                    ><i class="fa-solid fa-gift pe-2"></i
+                                    >$4,265.42</span
+                                >
+                                <span class="card__bottom__text">73%</span>
+                            </div>
+                            <!-- /mony -->
+                        </div>
+                        <!-- /card--body -->
+                    </div>
+                    <!-- /card -->
+                </div>
+                <div class="card__temp">
+                    <div class="card">
+                        <div class="top-right-icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                        <!-- /top-right-icons -->
+                        <img
+                            src="assets/images/pexels-rdne-6647119.jpg"
+                            class="card-img-top"
+                            alt="img1"
+                        />
+                        <div class="card__body">
+                            <img
+                                src="https://i.pravatar.cc/24"
+                                alt="logo"
+                                class="rounded-circle imgAvatar"
+                            />
+                            <span class="card__body__name">Olivia Ritye</span>
+                            <h5 class="card--title">
+                                Ms. Saint-Martin Doranyia Pascal
+                            </h5>
+                            <p class="card--text">
+                                Hi This is your Miss Teen Carnival 2022 Doranyia
+                                Pascal I will be representing Saint Martin...
+                            </p>
+                            <div
+                                class="progress"
+                                role="progressbar"
+                                aria-label="Success example"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                            >
+                                <div
+                                    class="progress-bar"
+                                    style="width: 70%"
+                                ></div>
+                            </div>
+                            <!-- /progress -->
+                            <div
+                                class="d-flex justify-content-between small mb-1"
+                            >
+                                <span class="card__bottom__text"
+                                    ><i class="fa-solid fa-gift pe-2"></i
+                                    >$4,265.42</span
+                                >
+                                <span class="card__bottom__text">73%</span>
+                            </div>
+                            <!-- /mony -->
+                        </div>
+                        <!-- /card--body -->
+                    </div>
+                    <!-- /card -->
+                </div>
+                <div class="card__temp">
+                    <div class="card">
+                        <div class="top-right-icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                        <!-- /top-right-icons -->
+                        <img
+                            src="assets/images/pexels-rdne-6647119.jpg"
+                            class="card-img-top"
+                            alt="img1"
+                        />
+                        <div class="card__body">
+                            <img
+                                src="https://i.pravatar.cc/24"
+                                alt="logo"
+                                class="rounded-circle imgAvatar"
+                            />
+                            <span class="card__body__name">Olivia Ritye</span>
+                            <h5 class="card--title">
+                                Ms. Saint-Martin Doranyia Pascal
+                            </h5>
+                            <p class="card--text">
+                                Hi This is your Miss Teen Carnival 2022 Doranyia
+                                Pascal I will be representing Saint Martin...
+                            </p>
+                            <div
+                                class="progress"
+                                role="progressbar"
+                                aria-label="Success example"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                            >
+                                <div
+                                    class="progress-bar"
+                                    style="width: 70%"
+                                ></div>
+                            </div>
+                            <!-- /progress -->
+                            <div
+                                class="d-flex justify-content-between small mb-1"
+                            >
+                                <span class="card__bottom__text"
+                                    ><i class="fa-solid fa-gift pe-2"></i
+                                    >$4,265.42</span
+                                >
+                                <span class="card__bottom__text">73%</span>
+                            </div>
+                            <!-- /mony -->
+                        </div>
+                        <!-- /card--body -->
+                    </div>
+                    <!-- /card -->
+                </div>
+                <div class="card__temp">
+                    <div class="card">
+                        <div class="top-right-icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                        <!-- /top-right-icons -->
+                        <img
+                            src="assets/images/pexels-rdne-6647119.jpg"
+                            class="card-img-top"
+                            alt="img1"
+                        />
+                        <div class="card__body">
+                            <img
+                                src="https://i.pravatar.cc/24"
+                                alt="logo"
+                                class="rounded-circle imgAvatar"
+                            />
+                            <span class="card__body__name">Olivia Ritye</span>
+                            <h5 class="card--title">
+                                Ms. Saint-Martin Doranyia Pascal
+                            </h5>
+                            <p class="card--text">
+                                Hi This is your Miss Teen Carnival 2022 Doranyia
+                                Pascal I will be representing Saint Martin...
+                            </p>
+                            <div
+                                class="progress"
+                                role="progressbar"
+                                aria-label="Success example"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                            >
+                                <div
+                                    class="progress-bar"
+                                    style="width: 70%"
+                                ></div>
+                            </div>
+                            <!-- /progress -->
+                            <div
+                                class="d-flex justify-content-between small mb-1"
+                            >
+                                <span class="card__bottom__text"
+                                    ><i class="fa-solid fa-gift pe-2"></i
+                                    >$4,265.42</span
+                                >
+                                <span class="card__bottom__text">73%</span>
+                            </div>
+                            <!-- /mony -->
+                        </div>
+                        <!-- /card--body -->
+                    </div>
+                    <!-- /card -->
+                </div>
+                <div class="card__temp">
+                    <div class="card">
+                        <div class="top-right-icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                        <!-- /top-right-icons -->
+                        <img
+                            src="assets/images/pexels-rdne-6647119.jpg"
+                            class="card-img-top"
+                            alt="img1"
+                        />
+                        <div class="card__body">
+                            <img
+                                src="https://i.pravatar.cc/24"
+                                alt="logo"
+                                class="rounded-circle imgAvatar"
+                            />
+                            <span class="card__body__name">Olivia Ritye</span>
+                            <h5 class="card--title">
+                                Ms. Saint-Martin Doranyia Pascal
+                            </h5>
+                            <p class="card--text">
+                                Hi This is your Miss Teen Carnival 2022 Doranyia
+                                Pascal I will be representing Saint Martin...
+                            </p>
+                            <div
+                                class="progress"
+                                role="progressbar"
+                                aria-label="Success example"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                            >
+                                <div
+                                    class="progress-bar"
+                                    style="width: 70%"
+                                ></div>
+                            </div>
+                            <!-- /progress -->
+                            <div
+                                class="d-flex justify-content-between small mb-1"
+                            >
+                                <span class="card__bottom__text"
+                                    ><i class="fa-solid fa-gift pe-2"></i
+                                    >$4,265.42</span
+                                >
+                                <span class="card__bottom__text">73%</span>
+                            </div>
+                            <!-- /mony -->
+                        </div>
+                        <!-- /card--body -->
+                    </div>
+                    <!-- /card -->
+                </div>
+            </div>
+        </div>
+        <!-- /card__container -->
+
+        <div class="pagination-container m-auto my-5 container">
+            <ul class="pagination justify-content-center">
+                <li class="page-item">
+                    <a class="page-link" href="#">← Previous</a>
+                </li>
+                <li class="page-item active">
+                    <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">3</a>
+                </li>
+                <li class="ellipsis">...</li>
+                <li class="page-item">
+                    <a class="page-link" href="#">8</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">9</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">10</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next →</a>
+                </li>
+            </ul>
+        </div>
     <script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>

@@ -10,93 +10,117 @@
     <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-                <!-- Section: Design Block -->
-        <section class="text-center text-lg-start">
-            <style>
+    <!-- Section: Design Block -->
+    <section class="text-center text-lg-start">
+        <style>
+            .cascading-right {
+                margin-right: -50px;
+            }
+
+            @media (max-width: 991.98px) {
                 .cascading-right {
-                    margin-right: -50px;
+                    margin-right: 0;
                 }
+            }
+        </style>
 
-                @media (max-width: 991.98px) {
-                    .cascading-right {
-                        margin-right: 0;
-                    }
-                }
-            </style>
-
-            <!-- Jumbotron -->
-            <div class="container py-4">
-                <div class="row g-0 align-items-center">
-                    <div class="col-lg-6 mb-5 mb-lg-0">
-                        <div
-                            class="card cascading-right bg-body-tertiary"
-                            style="backdrop-filter: blur(30px)"
-                        >
-                            <div class="card-body p-5 shadow-5 text-center login__box__shadow">
-                                <h2 class="fw-bold mb-5">Login now</h2>
-                                <form>
-                                    <!-- Email input -->
-                                    <div
-                                        data-mdb-input-init
-                                        class="form-outline mb-4"
+        <!-- Jumbotron -->
+        <div class="container max__width__1280 py-4">
+            <div class="row g-0 align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div
+                        class="card cascading-right bg-body-tertiary"
+                        style="backdrop-filter: blur(30px)"
+                    >
+                        <div class="card-body p-5 shadow-5 text-center login__box__shadow">
+                            <h2 class="fw-bold mb-5">Login now</h2>
+                            <form class="needs-validation" novalidate>
+                                <!-- Email input -->
+                                <div
+                                    data-mdb-input-init
+                                    class="form-outline mb-4"
+                                >
+                                    <input
+                                        type="email"
+                                        id="form3Example3"
+                                        class="form-control"
+                                        required
+                                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                    />
+                                    <label
+                                        class="form-label"
+                                        for="form3Example3"
+                                        >Email address</label
                                     >
-                                        <input
-                                            type="email"
-                                            id="form3Example3"
-                                            class="form-control"
-                                        />
-                                        <label
-                                            class="form-label"
-                                            for="form3Example3"
-                                            >Email address</label
-                                        >
+                                    <div class="invalid-feedback">
+                                        Please enter a valid email address.
                                     </div>
+                                </div>
 
-                                    <!-- Password input -->
-                                    <div
-                                        data-mdb-input-init
-                                        class="form-outline mb-4"
+                                <!-- Password input -->
+                                <div
+                                    data-mdb-input-init
+                                    class="form-outline mb-4"
+                                >
+                                    <input
+                                        type="password"
+                                        id="form3Example4"
+                                        class="form-control"
+                                        required
+                                        minlength="6"
+                                    />
+                                    <label
+                                        class="form-label"
+                                        for="form3Example4"
+                                        >Password</label
                                     >
-                                        <input
-                                            type="password"
-                                            id="form3Example4"
-                                            class="form-control"
-                                        />
-                                        <label
-                                            class="form-label"
-                                            for="form3Example4"
-                                            >Password</label
-                                        >
+                                    <div class="invalid-feedback">
+                                        Password must be at least 6 characters long.
                                     </div>
+                                </div>
 
-                                    <!-- Submit button -->
-                                    <button
-                                        type="submit"
-                                        data-mdb-button-init
-                                        data-mdb-ripple-init
-                                        class="btn btn-primary btn-block mb-4 button__default__bg-color"
-                                    >
-                                        Sign up
-                                    </button>
+                                <!-- Submit button -->
+                                <button
+                                    type="submit"
+                                    data-mdb-button-init
+                                    data-mdb-ripple-init
+                                    class="btn btn-primary btn-block mb-4 button__default__bg-color"
+                                >
+                                    Sign up
+                                </button>
 
-                                    <!-- Register buttons -->
-                                </form>
-                            </div>
+                                <!-- Register buttons -->
+                            </form>
                         </div>
                     </div>
+                </div>
 
-                    <div class="col-lg-6 mb-5 mb-lg-0">
-                        <img
-                            src="../../assets/images/someMoney.jpg"
-                            class="w-100 rounded-4 shadow-4"
-                            alt=""
-                        />
-                    </div>
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <img
+                        src="../../assets/images/someMoney.jpg"
+                        class="w-100 rounded-4 shadow-4"
+                        alt=""
+                    />
                 </div>
             </div>
-            <!-- Jumbotron -->
-        </section>
-        
+        </div>
+        <!-- Jumbotron -->
+    </section>
+    
     <script src="js/bootstrap.bundle.js"></script>
-</body>
-</html>
+    <script>
+        // Bootstrap form validation
+        (function () {
+            'use strict';
+            const forms = document.querySelectorAll('.needs-validation');
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        })();
+    </script>
