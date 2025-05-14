@@ -1,3 +1,8 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .button__default__bg-color {
     background-color: #A3E635;
     color: white;
@@ -18,6 +23,10 @@
 
 .login__box__shadow {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.max__width__1280 {
+    max-width: 1280px;
 }
 
 .border__none {

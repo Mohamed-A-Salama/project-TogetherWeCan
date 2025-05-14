@@ -23,3 +23,7 @@
 .border__none {
     border: none !important;
 }
+
+.max__width__1280 {
+    max-width: 1280px;
+}
