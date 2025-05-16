@@ -1,15 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    
-    <script src="js/bootstrap.bundle.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="css/all.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/profile.css" />
+    </head>
+    <body>
+ <div class="profile__main__container container mt-5">
+        <div class="profile__title__div d-flex justify-content-between flex-column flex-md-row">
+            <div class="title__left__section mb-3 mb-md-0">
+                <h3>Profile</h3>
+                <p class="mb-0">
+                    Update your personal info with your data preferences.
+                </p>
+            </div>
+            <div class="title__right__filter d-flex gap-2 justify-content-center align-items-center">
+                <button class="button__show__save btn btn-secondary d-flex gap-2 justify-content-center align-items-center">
+                    <i class="fa-solid fa-floppy-disk"></i>
+                    <p class="mb-0">Save Settings</p>
+                </button>
+            </div>
+        </div>
+        <!--================== body section =============== -->
+        <section class="container profile__body__container mt-5 d-flex flex-column flex-lg-row gap-3 justify-content-between">
+            <!-- ===================left=============== -->
+            <div class="profile__body__left d-flex flex-column col-12 col-lg-9">
+                <div class="div__user__name mt-3">
+                    <div class="div__user__name mb-3">
+                        <label for="userName" class="form-label text-uppercase">Full Name</label>
+                        <div class="d-flex gap-2">
+                            <input type="text" class="form-control" id="userName" value="hamdi" />
+                            <input type="text" class="form-control" value="hamada" />
+                        </div>
+                    </div>
+                </div>
+                <div class="div__user__email mt-4">
+                    <label for="campaignTitle" class="form-label text-uppercase">E-mail</label>
+                    <input type="text" class="form-control" id="campaignTitle" value="hamada@gmail.com" />
+                </div>
+                <div class="div__user__avatar mt-3">
+                    <label class="form-label text-uppercase">Customize Your Avatar</label>
+                    <div class="d-flex align-items-start">
+                        <div class="me-4">
+                            <img src="./assets/images/black male.png" alt="Avatar" class="rounded-circle" style="width: 120px; height: 120px; background-color: #e0f7e9;" />
+                        </div>
+                        <div class="d-flex flex-column gap-2 w-100 w-md-50">
+                            <div>
+                                <label for="person" class="form-label text-uppercase">Person</label>
+                                <select class="form-select" id="person">
+                                    <option selected>Matthew</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="skinTone" class="form-label text-uppercase">Skin Tone</label>
+                                <select class="form-select" id="skinTone">
+                                    <option selected>Black</option>
+                                    <option>white</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="pose" class="form-label text-uppercase">Pose</label>
+                                <select class="form-select" id="pose">
+                                    <option selected>Happy</option>
+                                    <option>Sad</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="form-label text-uppercase">Type</label>
+                                <div class="d-flex gap-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="type" id="male" checked />
+                                        <label class="form-check-label" for="male">Male</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="type" id="female" />
+                                        <label class="form-check-label" for="female">Female</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="div__user__localization mt-3">
+                    <label for="localization" class="form-label text-uppercase">Localization</label>
+                    <select class="form-select" id="localization">
+                        <option selected>Rio de Janeiro, Brasil</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+            </div>
+            <!-- ===================right=============== -->
+            <div class="profile__body__right col-12 col-lg-3">
+                <div class="card__temp">
+                    <div class="card">
+                        <div class="top-right-icons d-flex gap-2 justify-content-end">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                        <img src="./assets/images/pexels-rdne-6647119.jpg" class="card-img-top" alt="img1" />
+                        <div class="card__body">
+                            <img src="./assets/images/black male.png" alt="logo" class="rounded-circle imgAvatar" />
+                            <span class="card__body__name">Olivia Ritye</span>
+                            <h5 class="card--title">Ms. Saint-Martin Doranyia Pascal</h5>
+                            <p class="card--text">
+                                Hi This is your Miss Teen Carnival 2022 Doranyia Pascal I will be representing Saint Martin...
+                            </p>
+                            <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 70%"></div>
+                            </div>
+                            <div class="d-flex justify-content-between small mb-1">
+                                <span class="card__bottom__text"><i class="fa-solid fa-gift pe-2"></i>$4,265.42</span>
+                                <span class="card__bottom__text">73%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+        <script src="js/bootstrap.bundle.js"></script>
+    </body>
 </html>
