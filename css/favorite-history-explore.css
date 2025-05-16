@@ -48,19 +48,19 @@ body {
     border-radius: var(--radius-lg);
 }
 
-.button__show__filters {
+.button__show__save {
     background-color: #84cc16;
     color: white;
     border: 1px solid #84cc16;
 }
 
-.button__show__filters:hover {
+.button__show__save:hover {
     background-color: #a3e635;
     color: var(--color-gray-900);
     border: 1px solid #a3e635;
 }
 
-.button__show__filters:active {
+.button__show__save:active {
     background-color: #3f6212 !important;
     color: white !important;
     border: 1px solid #3f6212 !important;
@@ -85,6 +85,8 @@ body {
 
 .imgAvatar {
     margin-bottom: 5px;
+    width: 32px;
+    height: 32px;
 }
 
 .imgAvatar:hover {
