@@ -3,11 +3,43 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <link rel="stylesheet" href="../bootstrap.min.css">
-        <link rel="stylesheet" href="navbar.css" />
+        <title>navbar</title>
+         <link rel="stylesheet" href="../../css/all.min.css">
+         <link rel="stylesheet" href="../../css/bootstrap.min.css">
+         <link rel="stylesheet" href="../../css/style.css">
+         <link rel="stylesheet" href="navbar.css" />
     </head>
     <body>
-
+<header class="z-3 position-absolute w-100 rounded-3">
+  <nav class="navbar navbar-expand-lg navbar-light navbar-custom px-4 py-2">
+    <a class="navbar-brand d-flex align-items-center text-white fw-bold" href="#">
+      <img src="../../assets/images/Frame 5377.png" alt="Logo" width="24" class="me-2" />
+      Crowdfy
+    </a><!-- /navbar-brand -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-3 me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Explore</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Campaigns</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Profile</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">About us</a></li>
+      </ul><!-- /navbar-nav -->
+      <div class="d-flex align-items-center">
+        <div class="search-box me-2">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search" />
+        </div><!-- /search-box -->
+        <div class="icon-squre"><i class="fa-regular fa-bell"></i></div>
+        <div class="icon-circle"><img src="../../assets/images/asian female.png" alt="Avatar" class="rounded-circle" /></div>
+        <div class="icon-squre"><i class="fa-solid fa-gear"></i></div>
+      </div>
+    </div><!-- /collapse -->
+  </nav><!-- /nav -->
+  </header><!-- /header -->
     </body>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/bootstrap.bundle.js"></script>
 </html>

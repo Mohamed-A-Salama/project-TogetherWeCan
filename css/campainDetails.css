@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-body);
+} 
+ 
+ /* navbar1 */
+.nav-link {
+    color: #6c757d;
+    padding: 0.5rem 1rem;
+}
+.nav-link.active {
+    color: #000000;
+    border-radius: 5px;
+}
+
+.icon-squre {
+    width: 36px;
+    height: 36px;
+    border: 2px solid #F6F6F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-lime-100);
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.icon-squre i {
+    color: #64748B;
+}
+
+.icon-circle {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #F6F6F6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: var(--color-lime-100);
+    margin-left: 10px;
+}
+
+.icon-circle img{
+    width: 36px;
+    height: 36px;
+}
+
+.line{
+    color: var(--color-slate-400);
+    margin: 1px 0;
+}
+/* navbar2 */
+
+.search-box {
+    border: 1px solid var(--color-lime-100);
+    padding: 6px 15px;
+    display: flex;
+    align-items: center;
+    width: 250px;
+    border-radius: 5px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    width: 100%;
+    background-color: transparent;
+}
+.search-box input::placeholder {
+    color: var(--color-slate-400);
+}
+.search-box i{
+    color: var(--color-slate-400);
+}
+
+.nav--link {
+    color: #000000;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+.nav--link.active {
+    background-color: var(--color-lime-300);
+    border-radius: 5px;
+}
+
+/* campain details */
+ 
+.campaign-header {
+    padding: 2rem 0;
+}
+
+.campaign-title {
+    color: #1a2e44;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.campaign-subtitle {
+    color: #1a2e44;
+    font-size: 1rem;
+}
+
+.btn-like{
+    border: 1px solid var(--color-lime-100);
+    border-radius: 5px;
+    padding: 6px 15px;
+    box-shadow: var(--color-lime-100) 0px 0px 5px;
+}
+
+.avatar{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.locaton-contant{
+    font-size: large;
+}
+.line2{
+    margin-top: -4px;
+}
+.progress-bar, .btn-donate-now{
+    background-color: var(--color-lime-500);
+    color: #F6F6F6;
+}
+.btn-donate-now:hover{
+    background-color:  var(--color-lime-300);
+}

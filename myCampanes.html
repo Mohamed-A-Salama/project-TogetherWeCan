@@ -3,13 +3,274 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Campanes</title>
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/myCampanes.css">
 </head>
 <body>
     
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light px-5">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center fw-bold" href="#">
+        <img src="assets/images/Frame 5377.png" alt="Logo" width="24" class="me-2" />
+        Crowdfy
+        </a><!-- /navbar-brand -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse fw-medium" id="navbarNav">
+        <ul class="navbar-nav ms-3 me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Explore</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#">Campaigns</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Profile</a></li>
+        </ul><!-- /navbar-nav -->
+        <div class="d-flex align-items-center">
+            <div class="icon-circle"><img src="assets/images/white female.png" alt="Avatar" class="rounded-circle" /></div>
+            <div class="icon-squre"><i class="fa-solid fa-gear"></i></div>
+        </div>
+        </div><!-- /collapse -->
+    </div><!-- /container -->
+  </nav><!-- /nav -->
+  <hr class="line"/>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-second">
+        <div class="container-fluid fw-medium">
+            <ul class="navbar-nav item ms-0 me-auto mb-2 mb-lg-0 ">
+                <li class="nav--item"><a class="nav--link active" href="#"><i class="fa-regular fa-eye me-2"></i> Overview</a></li>
+                <li class="nav--item"><a class="nav--link" href="#"><i class="fa-solid fa-rocket me-2"></i> My campaigns</a></li>
+            </ul><!-- /navbar-nav -->
+                <div class="search-box me-0">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search" />
+                </div> <!-- /search-box -->
+        </div><!-- /container-fluid -->
+    </nav><!-- /nav -->
+  </div><!-- /container -->
+  <hr class="line"/>
+  </header><!-- /header -->
+  <section class="campaigns mt-3">
+    <div class="container d-flex justify-content-md-between">
+        <div class="campaigns-header">
+            <h2>My Campaigns</h2>
+            <p>Your current sales summary and activity.</p>
+        </div><!-- /campaigns-header -->
+        <div class="campaigns-buttons m-2">
+            <!-- <button type="button" class="send--button p- active"><i class="fa-solid fa-code-pull-request"></i> Send Request</button>
+            <button type="button" class="add--button"><i class="fa-solid fa-plus"></i></button> -->
+            <button type="button" class="add--button p- active"><i class="fa-solid fa-plus"></i> add New Campaign</button>
+        </div><!-- /campaigns-buttons -->
+    </div><!-- /container -->
+  <div class="container mt-3 mb-3">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="row cards-container">
+        <!-- Card 1 -->
+          <div class="col-md-6 mb-4 d-flex flex-column h-100">
+            <div class="campaign-card shadow flex-grow-1">
+              <div class="row g-0 h-100">
+                <div class="col-4">
+                  <img src="assets/images/pexels-rdne-6647119.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="col-8 d-flex align-items-center">
+                  <div class="card-content p-3">
+                    <span class="d-block mb-1">Crowdfy</span>
+                    <h5 class="header">Install Water Well in Kingstown</h5>
+                    <p class="mb-1">ANA YAMAMOTO</p>
+                    <p class="mb-1">0xbb AC23 43af 98f</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="campaign-stats mt-2 px-1">
+              <p class="mb-1 fw-medium">Total donations: $2,840.40</p>
+              <div class="progress" style="height: 7px;">
+                <div class="progress-bar" role="progressbar" style="width: 30%; background-color: #A3E635;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-6 mb-4 d-flex flex-column h-100">
+            <div class="campaign-card shadow flex-grow-1">
+              <div class="row g-0 h-100">
+                <div class="col-4">
+                  <img src="assets/images/pexels-rdne-6647119.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="col-8 d-flex align-items-center">
+                  <div class="card-content p-3">
+                    <span class="d-block mb-1">Crowdfy</span>
+                    <h5 class="">Install Water Well in Kingstown</h5>
+                    <p class="mb-1">JOHN DOE</p>
+                    <p class="mb-1">0xcd EF45 67de 12b</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="campaign-stats mt-2 px-1">
+              <p class="mb-1 fw-medium">Total donations: $1,520.00</p>
+              <div class="progress" style="height: 7px;">
+                <div class="progress-bar" role="progressbar" style="width: 50%; background-color: #A3E635;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-6 mb-4 d-flex flex-column h-100">
+            <div class="campaign-card shadow flex-grow-1">
+              <div class="row g-0 h-100">
+                <div class="col-4">
+                  <img src="assets/images/pexels-rdne-6647119.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="col-8 d-flex align-items-center">
+                  <div class="card-content p-3">
+                    <span class="d-block mb-1">Crowdfy</span>
+                    <h5 class="">Renovate Kingstown Orphanage</h5>
+                    <p class="mb-1">SARAH LANE</p>
+                    <p class="mb-1">0xaa 78CD 43ef 88f</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="campaign-stats mt-2 px-1">
+              <p class="mb-1 fw-medium">Total donations: $3,210.75</p>
+              <div class="progress" style="height: 7px;">
+                <div class="progress-bar" role="progressbar" style="width: 70%; background-color: #A3E635;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-md-6 mb-4 d-flex flex-column h-100">
+            <div class="campaign-card shadow flex-grow-1">
+              <div class="row g-0 h-100">
+                <div class="col-4">
+                  <img src="assets/images/pexels-rdne-6647119.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="col-8 d-flex align-items-center">
+                  <div class="card-content p-3">
+                    <span class="d-block mb-1">Crowdfy</span>
+                    <h5 class="">Install Water Well in Kingstown</h5>
+                    <p class="mb-1">LISA WONG</p>
+                    <p class="mb-1">0xbb 11CC 99aa 77d</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="campaign-stats mt-2 px-1">
+              <p class="mb-1 fw-medium">Total donations: $950.00</p>
+              <div class="progress" style="height: 7px;">
+                <div class="progress-bar" role="progressbar" style="width: 45%; background-color: #A3E635;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="stats-card">
+                <p>Donations</p>
+                <h3>$1,280</h3>
+                <hr>
+                <div class="link-view-card">
+                  <a href="#" class="view-card">View analytics</a>
+                </div><!-- /link-view-card -->
+              </div><!-- /stats-card -->
+            </div><!-- /col1 -->
+            <div class="col-md-3">
+              <div class="stats-card">
+                <p>Signups</p>
+                <h3>6,785</h3>
+                <hr>
+                <div class="link-view-card">
+                  <a href="#" class="view-card">View report</a>
+                </div><!-- /link-view-card -->
+              </div><!-- /stats-card -->
+            </div><!-- /col2 -->
+            <div class="col-md-3">
+              <div class="stats-card">
+                <p>Likes</p>
+                <h3>77</h3>
+                <hr>
+                <div class="link-view-card">
+                  <a href="#" class="view-card">View report</a>
+                </div><!-- /link-view-card -->
+              </div><!-- /stats-card -->
+            </div><!-- /col3 -->
+            <div class="col-md-3">
+              <div class="stats-card">
+                <p>Views</p>
+                <h3>13,767</h3>
+                <hr>
+                <div class="link-view-card">
+                  <a href="#" class="view-card">View report</a>
+                </div><!-- /link-view-card -->
+              </div><!-- /stats-card -->
+            </div><!-- /col4 -->
+          </div><!-- /row -->
+        </div><!-- /stats-container -->
+      </div><!-- /col-main -->
+      <div class="col-lg-4">
+        <div class="activity-container">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h5>Activity</h5>
+            <a href="#" class="view-all">View all</a>
+          </div>
+          <div class="activity-item">
+            <div class="d-flex align-items-center">
+              <img src="assets/images/asian female.png" alt="" class="Avatar rounded-circle me-2">
+              <div class="activity-item-price">
+                <p class="mb-0"><strong>Demi Wikinson</strong><br> Funded <a href="#">Help my friends wit...</a></p>
+                <p class="mb-0"><i class="fa-solid fa-gem text-success me-1"></i> <strong>+$0.32 ETH</strong><p class="ms-4">$598.9</p></p>
+              </div><!-- /activity-item-price -->
+            </div><!-- /contant-item -->
+          </div><!-- /activity-item -->
+          <div class="activity-item">
+            <div class="d-flex align-items-center">
+              <img src="assets/images/black male.png" alt="" class="Avatar rounded-circle me-2">
+              <div class="activity-item-price">
+                <p class="mb-0"><strong>Demi Wikinson</strong><br> Funded <a href="#">Help my friends wit...</a></p>
+                <p class="mb-0"><i class="fa-solid fa-gem text-success me-1"></i> <strong>+$0.32 ETH</strong><p class="ms-4">$598.9</p></p>
+              </div><!-- /activity-item-price -->
+            </div><!-- /contant-item -->
+          </div><!-- /activity-item -->
+          <div class="activity-item">
+            <div class="d-flex align-items-center">
+              <img src="assets/images/white female.png" alt="" class="Avatar rounded-circle me-2">
+              <div class="activity-item-price">
+                <p class="mb-0"><strong>Demi Wikinson</strong><br> Funded <a href="#">Help my friends wit...</a></p>
+                <p class="mb-0"><i class="fa-solid fa-gem text-success me-1"></i> <strong>+$0.32 ETH</strong><p class="ms-4">$598.9</p></p>
+              </div><!-- /activity-item-price-->
+            </div><!-- /contant-item -->
+          </div><!-- /activity-item -->
+          <div class="activity-item">
+            <div class="d-flex align-items-center">
+              <img src="assets/images/white male.png" alt="" class="Avatar rounded-circle me-2">
+              <div class="activity-item-price">
+                <p class="mb-0"><strong>Demi Wikinson</strong><br> Funded <a href="#">Help my friends wit...</a></p>
+                <p class="mb-0"><i class="fa-solid fa-gem text-success me-1"></i> <strong>+$0.32 ETH</strong><p class="ms-4">$598.9</p></p>
+              </div><!-- /activity-item-price -->
+            </div><!-- /contant-item -->
+          </div><!-- /activity-item -->
+          <div class="activity-item">
+            <div class="d-flex align-items-center">
+              <img src="assets/images/black male.png" alt="" class="Avatar rounded-circle me-2">
+              <div class="activity-item-price">
+                <p class="mb-0"><strong>Demi Wikinson</strong><br> Funded <a href="#">Help my friends wit...</a></p>
+                <p class="mb-0"><i class="fa-solid fa-gem text-success me-1"></i> <strong>+$0.32 ETH</strong><p class="ms-4">$598.9</p></p>
+              </div><!-- /activity-item-price -->
+            </div><!-- /contant-item -->
+          </div><!-- /activity-item -->
+        </div><!-- /activity-container -->
+      </div><!-- col-main -->
+    </div><!-- /row-main -->
+  </div><!-- /container -->
+  </section><!-- /campaigns -->
+
     <script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>

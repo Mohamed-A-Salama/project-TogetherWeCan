@@ -1,0 +1,265 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--font-body);
+}
+
+/* navbar */
+
+.search-box {
+    border: 1px solid #F6F6F6;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    width: 250px;
+    border-radius: 5px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    width: 100%;
+    background-color: transparent;
+}
+.search-box input::placeholder {
+    color: #F6F6F6;
+}
+.search-box i{
+    color: #F6F6F6;
+}
+
+.icon-squre {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #F6F6F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.icon-squre i {
+    color: #F6F6F6;
+}
+
+.icon-circle {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #F6F6F6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #F6F6F6;
+    margin-left: 10px;
+}
+.icon-circle img{
+    width: 36px;
+    height: 36px;
+}
+    
+/* Hero Section */
+
+.hero {
+    background: url('../assets/images/africa-african-children-child-children-wallpaper-preview.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100vh;
+    color: #F6F6F6;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+        
+.hero__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.493);
+    z-index: 2;
+}
+
+.hero--content{
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+.hero p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+.btn--hero{
+    background-color: var(--color-primary);
+    color: #F6F6F6;
+    padding: 10px 20px;
+    border: 1px solid var(--color-primary);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.btn--hero:hover{
+    background-color: transparent;
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+/* section2 */
+
+.card-custom {
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    padding: 20px;
+}
+        
+.card-custom:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+        
+.icon-bg {
+    background-color: #fff5cc;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+        
+.icon-bg img {
+    width: 35px;
+    height: 35px;
+}
+        
+.card-body-custom {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+        
+.text-content h5 {
+    font-weight: bold;
+    margin: 0;
+}
+    
+.text-content p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0;
+}
+
+/* section3 */
+
+.hero2-section {
+    background-color: #f7f7f7;
+    padding: 60px 0;
+}
+    
+.hero2-img-wrapper {
+    position: relative;
+    text-align: center;
+}
+    
+.hero2-img-wrapper img.person {
+    max-width: 90%;
+    z-index: 2;
+    position: relative;
+    border-radius: 50%;
+}
+    
+.donation-badge {
+    position: absolute;
+    top: 20px;
+    left: -10px;
+    background-color: #00695c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    z-index: 4;
+}
+    
+.donation-badge small {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: normal;
+}
+
+/* popular */
+
+.popular--line{
+    width: 40%;
+    height: 1px;
+    background-color: var(--color-primary);
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+.card{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+.card__body{
+    padding: 10px;
+}
+
+.imgAvatar{
+    margin-bottom: 10px;
+    width: 36px;
+    height: 36px;
+}
+
+.card--title {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.card--text {
+    font-size: 0.9rem;
+    color: #555;
+}
+.progress {
+    height: 6px;
+    margin-bottom: 10px;
+}
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+.card {
+    position: relative;
+}
+.top-right-icons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+}
+.top-right-icons i {
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
