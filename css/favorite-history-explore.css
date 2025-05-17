@@ -48,19 +48,19 @@ body {
     border-radius: var(--radius-lg);
 }
 
-.button__show__save {
+.button__show__filters {
     background-color: #84cc16;
     color: white;
     border: 1px solid #84cc16;
 }
 
-.button__show__save:hover {
+.button__show__filters:hover {
     background-color: #a3e635;
     color: var(--color-gray-900);
     border: 1px solid #a3e635;
 }
 
-.button__show__save:active {
+.button__show__filters:active {
     background-color: #3f6212 !important;
     color: white !important;
     border: 1px solid #3f6212 !important;
