@@ -1,6 +1,8 @@
 :root {
     /* ===== Global Variables ===== */
-    /* ===== Colors ===== */ 
+    /* ===== Colors ===== */
+    --color-primary: #157347; 
+    --color-lime-700: #28a745;
     --color-lime-500: #84cc16;  
     --color-lime-300: #D9F99D;    
     --color-lime-100: #ECFCCB;    
